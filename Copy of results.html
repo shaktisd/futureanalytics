@@ -1,0 +1,16 @@
+<html>
+	<body>
+		<table>
+      <tr>
+      	<th>SlNo</th>
+      	<th>Sentiment</th>
+      	<th>Sentence</th>
+      </tr>
+      <tr th:each="s,iterationStatus  : ${calculatedSentiment}">
+      	<td th:text="${iterationStatus.count}">1</td>
+        <td th:text="${s.sentence}">001</td>
+        <td th:text="${s.sentiment}">Name</td>
+      </tr>
+    </table>
+	</body>
+</html>
