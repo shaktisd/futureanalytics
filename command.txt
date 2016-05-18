@@ -1,0 +1,1 @@
+java -cp * -Xmx1g edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,parse,pos,sentiment -file input.txt
